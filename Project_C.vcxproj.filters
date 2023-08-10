@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="81014.cpp">
-      <Filter>头文件\源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="81015.cpp">
+    <ClCompile Include="BT.cpp">
       <Filter>头文件\源文件</Filter>
     </ClCompile>
     <ClCompile Include="DFS.cpp">
