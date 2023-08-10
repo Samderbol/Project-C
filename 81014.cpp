@@ -1,10 +1,13 @@
-#include <cstdio>
+#include <stdio.h>
 #include <iostream>
 using namespace std;
+void print();
 int main()
 {
-	printf("Hello world");
-	puts("Hello world");
-	cout << "Hello world" << endl;
+	print();
 	return 0;
+}
+void print()
+{
+	cout << "Hello World" << endl;
 }
