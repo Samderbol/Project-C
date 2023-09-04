@@ -21,7 +21,10 @@
     <ClCompile Include="DFS.cpp">
       <Filter>头文件\源文件</Filter>
     </ClCompile>
-    <ClCompile Include="var.cpp">
+    <ClCompile Include="VAR.cpp">
+      <Filter>头文件\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DS.cpp">
       <Filter>头文件\源文件</Filter>
     </ClCompile>
   </ItemGroup>

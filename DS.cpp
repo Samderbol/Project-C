@@ -8,8 +8,9 @@ struct type_name {
 } object_names;
 int main{
 	type_name object_names1;
-cout << " member_name: " << object_names.member_name1 << endl;
-
+    type_name object_names2;
+cout << " member_name: " << object_names1.member_name1 << endl;
+cout << " member_name: " << object_names2.member_name2 << endl;
 
 
 	return 0;
