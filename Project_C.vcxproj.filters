@@ -30,7 +30,7 @@
     <ClCompile Include="SqList.cpp">
       <Filter>头文件\源文件</Filter>
     </ClCompile>
-    <ClCompile Include="源.cpp">
+    <ClCompile Include="SqListBasicOperations.cpp">
       <Filter>头文件\源文件</Filter>
     </ClCompile>
   </ItemGroup>
