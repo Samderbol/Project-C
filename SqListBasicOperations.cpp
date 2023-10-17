@@ -39,6 +39,16 @@ bool ListInsert(SeqList& L, int i, int e) {
 	return true;
 }
 
+bool ListDelete(SeqList& L, int i, int& e) {
+	if (i < 1 || i>L.length)
+		return false;
+	e = L.data[i - 1];
+	for (int j = i; j < L.length; j++)
+		L.data[j - 1] = L.data[j];
+	L.length--;
+	return true;
+}
+
 void IncreaseSize(SeqList& L, int len) {
 	int* p = L.data;
 	L.data = (int*)malloc((L.MaxSize + len) * sizeof(int));
@@ -68,6 +78,7 @@ int main() {
 	//...往顺序表中随便插入几个元素...
 	IncreaseSize(L, 5);
 	bool insertResult = ListInsert(L, 5, 3);
+	int e = -1;
 
 
 	if (insertResult) {
@@ -76,5 +87,11 @@ int main() {
 	else {
 		cout << "Insertion failed." << endl;
 	}
+
+	if (ListDelete(L, 1, e))
+		printf("已删除第三个元素，删除元素值为=%d\n", e);
+	else
+		printf("位序不合法,删除失效\n");
+
 	return 0;
 }
