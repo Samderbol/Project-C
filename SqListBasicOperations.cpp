@@ -69,6 +69,14 @@ void IncreaseSize(SeqList& L, int len) {
 	cout << L.MaxSize << endl;
 	free(p);
 }
+int GetElem(SeqList L, int i) {
+	return L.data[i - 1];
+}
+int LocateElem(SeqList L, int e) {
+	for (int i = 0; i < L.length; i++)
+		if (L.data[i] == e)
+			return 0;
+}
 
 int main() {
 	//声明一个顺序表
